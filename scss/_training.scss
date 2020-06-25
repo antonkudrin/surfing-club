@@ -1,0 +1,46 @@
+.number {
+    font-size: 130px;
+    font-family: "LeagueSpartan";
+    color: rgb(249, 249, 249);
+    font-weight: bold;
+    line-height: 0.508;
+
+    position: absolute;
+}
+
+.vertically {
+    margin: 0;
+    writing-mode: vertical-lr;
+    font-size: 9px;
+    font-family: "LeagueSpartan";
+    color: $color_subtitle;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    transform: rotate(180deg);
+}
+
+.training.row {
+    width: 86%;
+    margin: 10% auto 0;
+}
+
+.training__aside {
+    padding: 6% 3% 0 !important;
+}
+
+.training__aside-number {
+    top: 10%;
+    left: 8%;
+}
+.training__img{
+    position: relative;
+}
+.training__img-vertically {
+    position: absolute;
+    top: 0;
+    right: -5%;
+    @extend.vertically;
+}
+
+

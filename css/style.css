@@ -1,0 +1,570 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Poppins:wght@300&display=swap");
+@font-face {
+  font-family: "LeagueSpartan";
+  src: url("./../fonts/league-spartan/League-Spartan-Bold.ttf.woff");
+}
+
+.navbar {
+  background: none !important;
+  margin: 0 6%;
+}
+
+.navbar-collapse {
+  margin-left: 16%;
+}
+
+.navbar-nav {
+  width: 50%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav-link {
+  font-size: 12px;
+  font-family: "LeagueSpartan";
+  color: rgba(11, 12, 17, 0.902);
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  line-height: 7.333;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.vertical {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50vw;
+  width: 7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.vertical__title {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  font-size: 12px;
+  font-family: "LeagueSpartan";
+  color: rgba(11, 12, 17, 0.2);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 7.333;
+  letter-spacing: 5px;
+  -webkit-transform: rotate(180deg) translateY(-20%);
+          transform: rotate(180deg) translateY(-20%);
+}
+
+.vertical__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.icon {
+  margin: 115% 0;
+  color: #ebebeb;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.icon:hover {
+  color: #9f9f9f;
+}
+
+.carousel {
+  width: 86%;
+  margin: auto;
+}
+
+.carousel-control-wrap {
+  display: inline-block;
+  position: inherit;
+  width: 120px;
+  height: 50px;
+  z-index: 1;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.carousel-indicators {
+  width: 5px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0;
+  bottom: 20px;
+  left: 40px;
+  font-size: 12px;
+  font-family: "LeagueSpartan";
+  font-weight: bold;
+}
+
+.carousel-indicators li {
+  width: 0;
+  display: none;
+  text-indent: 0;
+}
+
+.carousel-indicators li.active {
+  display: block;
+  color: #5da8ef;
+}
+
+.carousel-item_number {
+  position: absolute;
+  bottom: 0;
+  left: 55px;
+  margin-bottom: 0px;
+  font-size: 12px;
+  font-family: "LeagueSpartan";
+  font-weight: bold;
+  line-height: 4;
+  color: #8f8f8f;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  top: 0;
+  width: 50px;
+  height: 50px;
+}
+
+.carousel-control-prev i:before,
+.carousel-control-next i:before {
+  margin: 0;
+  color: #8f8f8f;
+}
+
+.carousel-item {
+  position: relative;
+}
+
+.carousel-item img {
+  float: right;
+  width: 80%;
+}
+
+.carousel-item__description {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-60%);
+          transform: translateY(-60%);
+}
+
+.carousel-item__title {
+  font-size: 62px;
+  font-family: "Playfair Display", serif;
+  color: #0b0c11;
+  font-weight: bold;
+  line-height: 1.032;
+}
+
+.carousel-item__your {
+  font-size: 12px;
+  font-family: "LeagueSpartan";
+  color: rgba(93, 168, 239, 0.902);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 7.333;
+  letter-spacing: 5px;
+}
+
+.carousel-item__subtitle {
+  font-size: 14px;
+  font-family: "Poppins";
+  color: #8f8f8f;
+  line-height: 1.714;
+  width: 50%;
+}
+
+.stories {
+  width: 86%;
+  margin: auto;
+}
+
+.stories__title {
+  position: relative;
+  padding-bottom: 7%;
+  margin-bottom: 5%;
+}
+
+.stories__title h1 {
+  font-size: 26px;
+  font-family: "Playfair Display", serif;
+  color: rgba(51, 51, 51, 0.902);
+  line-height: 1.462;
+  text-align: center;
+}
+
+.stories__title p {
+  font-size: 12px;
+  font-family: "Playfair Display", serif;
+  color: rgba(51, 51, 51, 0.902);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 7.333;
+  text-align: center;
+}
+
+.stories__title::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 2px;
+  height: 35%;
+  background-color: #5da8ef;
+}
+
+.stories__item-video {
+  width: 117.5%;
+  height: 90%;
+  -webkit-transform: translate(-15%, 12%);
+          transform: translate(-15%, 12%);
+}
+
+.slider {
+  width: 88.5%;
+  margin: 0 auto 4%;
+}
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+  font-family: "flaticon";
+}
+
+.slick-prev:before {
+  content: "\f109";
+}
+
+.slick-next:before {
+  content: "\f108";
+}
+
+.slick-slide {
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  opacity: 0.2;
+}
+
+.slick-active {
+  opacity: 1;
+}
+
+.slick-current {
+  opacity: 1;
+}
+
+.boards {
+  padding-top: 15%;
+  background-image: url("./../img/bg/bg-water.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.boards__title-blue {
+  font-size: 12px;
+  font-family: "LeagueSpartan";
+  color: rgba(93, 168, 239, 0.902);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+.board {
+  display: inline-block;
+  position: relative;
+}
+
+.board__thing {
+  position: relative;
+  float: left;
+  z-index: 2;
+}
+
+.board__thing::before {
+  content: "";
+  width: 100%;
+  height: 65%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #e7e7e7;
+  z-index: -1;
+}
+
+.board__description {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translate(80%);
+          transform: translate(80%);
+  z-index: 3;
+}
+
+.board__description p {
+  font-size: 12px;
+  font-family: "Poppins";
+  color: #7a7a7a;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 0;
+}
+
+.board__description h2 {
+  font-size: 26px;
+  font-family: "Playfair Display", serif;
+  color: rgba(51, 51, 51, 0.6);
+  margin-bottom: 20%;
+}
+
+.board__price {
+  display: inline-block;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.board__price span {
+  font-size: 20px;
+  font-family: "Poppins";
+  color: #ce60a8;
+  line-height: 1.2;
+}
+
+.board__price p {
+  font-size: 9px;
+  font-family: "LeagueSpartan";
+  color: #333333;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.number {
+  font-size: 130px;
+  font-family: "LeagueSpartan";
+  color: #f9f9f9;
+  font-weight: bold;
+  line-height: 0.508;
+  position: absolute;
+}
+
+.vertically, .training__img-vertically, .point__img-vertically {
+  margin: 0;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  font-size: 9px;
+  font-family: "LeagueSpartan";
+  color: rgba(97, 97, 97, 0.651);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.training.row {
+  width: 86%;
+  margin: 10% auto 0;
+}
+
+.training__aside {
+  padding: 6% 3% 0 !important;
+}
+
+.training__aside-number {
+  top: 10%;
+  left: 8%;
+}
+
+.training__img {
+  position: relative;
+}
+
+.training__img-vertically {
+  position: absolute;
+  top: 0;
+  right: -5%;
+}
+
+.point.row {
+  width: 70%;
+  margin: 10% auto 0;
+}
+
+.point__img {
+  position: relative;
+  padding-left: 3.5% !important;
+}
+
+.point__img-vertically {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.point__aside {
+  padding: 8% 5% 0 10% !important;
+}
+
+.point__aside-number {
+  top: 14%;
+  left: 19%;
+}
+
+a:hover {
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+body::before, body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 2px;
+  height: 600%;
+  background-color: rgba(204, 204, 204, 0.192);
+}
+
+body::before {
+  left: 7%;
+}
+
+body::after {
+  right: 7%;
+}
+
+body .row,
+body .col {
+  padding: 0;
+  margin: 0;
+}
+
+body * img {
+  width: 100%;
+}
+
+main {
+  overflow: hidden;
+}
+
+.description {
+  margin-top: 10%;
+  margin-left: 20%;
+  width: 336px;
+}
+
+.description__title {
+  position: relative;
+  display: inline-block;
+  font-size: 42px;
+  font-family: "Playfair Display", serif;
+  color: color_title;
+  font-weight: bold;
+}
+
+.description__title.befo {
+  padding-bottom: 15px;
+  margin-bottom: 15%;
+}
+
+.description__title.befo::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: #5da8ef;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.description__title.befo:hover::before {
+  width: 50%;
+}
+
+.description__subtitle {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: rgba(97, 97, 97, 0.651);
+  line-height: 1.714;
+  text-align: left;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.description__subtitle:hover {
+  color: #000;
+}
+
+.description__link {
+  position: relative;
+  padding: 5px 0;
+  font-size: 9px;
+  font-family: "LeagueSpartan";
+  color: #333333;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 7.333;
+  letter-spacing: 3px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 1;
+}
+
+.description__link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #5da8ef;
+  z-index: -0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.description__link:hover {
+  color: #badaf8;
+}
+
+.description__link:hover::before {
+  -webkit-transform: scaleX(0.6);
+          transform: scaleX(0.6);
+}

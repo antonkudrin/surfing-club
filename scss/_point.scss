@@ -1,0 +1,25 @@
+.point.row {
+    width: 70%;
+    margin: 10% auto 0;
+}
+
+.point__img {
+    position: relative;
+    padding-left: 3.5% !important;
+}
+
+.point__img-vertically{
+    position: absolute;
+    top: 0;
+    left: 0;
+    @extend.vertically;
+}
+
+.point__aside {
+    padding: 8% 5% 0 10% !important;
+}
+
+.point__aside-number {
+    top: 14%;
+    left: 19%;
+}

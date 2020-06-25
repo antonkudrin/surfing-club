@@ -1,0 +1,44 @@
+.stories {
+    width: 86%;
+    margin: auto;
+}
+
+.stories__title {
+    position: relative;
+    padding-bottom: 7%;
+    margin-bottom: 5%;
+    h1 {
+        font-size: 26px;
+        font-family: "Playfair Display", serif;
+        color: rgba(51, 51, 51, 0.902);
+        line-height: 1.462;
+        text-align: center;
+    }
+
+    p {
+        font-size: 12px;
+        font-family: "Playfair Display", serif;
+        color: rgba(51, 51, 51, 0.902);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 7.333;
+        text-align: center;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+
+        width: 2px;
+        height: 35%;
+        background-color: $color_linear;
+    }
+}
+
+.stories__item-video {
+    width: 117.5%;
+    height: 90%;
+
+    transform: translate(-15%, 12%);
+}

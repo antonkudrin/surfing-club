@@ -1,0 +1,163 @@
+.navbar {
+    background: none !important;
+    margin: 0 6%;
+}
+
+.navbar-collapse {
+    margin-left: 16%;
+}
+
+.navbar-nav {
+    width: 50%;
+    justify-content: space-between;
+}
+
+.nav-link {
+    font-size: 12px;
+    font-family: "LeagueSpartan";
+    color: rgba(11, 12, 17, 0.902);
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    line-height: 7.333;
+
+    transition: 0.3s;
+}
+
+.vertical {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50vw;
+    width: 7%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.vertical__title {
+    writing-mode: vertical-rl;
+    font-size: 12px;
+    font-family: "LeagueSpartan";
+    color: rgba(11, 12, 17, 0.2);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 7.333;
+    letter-spacing: 5px;
+    transform: rotate(180deg) translateY(-20%);
+}
+.vertical__icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.icon {
+    margin: 115% 0;
+    color: rgb(235, 235, 235);
+    transition: all 0.3s ease;
+    &:hover {
+        color: darken(rgb(235, 235, 235), 30%);
+    }
+}
+
+.carousel {
+    width: 86%;
+    margin: auto;
+}
+
+.carousel-control-wrap {
+    display: inline-block;
+    position: inherit;
+    width: 120px;
+    height: 50px;
+    z-index: 1;
+    transform: translateY(-100%);
+}
+
+.carousel-indicators {
+    width: 5px;
+    justify-content: flex-end;
+    margin: 0;
+    bottom: 20px;
+    left: 40px;
+
+    font-size: 12px;
+    font-family: "LeagueSpartan";
+    font-weight: bold;
+
+    li {
+        width: 0;
+        display: none;
+        text-indent: 0;
+    }
+    li.active {
+        display: block;
+        color: rgb(93, 168, 239);
+    }
+}
+.carousel-item_number {
+    position: absolute;
+    bottom: 0;
+    left: 55px;
+    margin-bottom: 0px;
+
+    font-size: 12px;
+    font-family: "LeagueSpartan";
+    font-weight: bold;
+    line-height: 4;
+    color: rgb(143, 143, 143);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    top: 0;
+    width: 50px;
+    height: 50px;
+
+    i:before {
+        margin: 0;
+        color: rgb(143, 143, 143);
+    }
+}
+
+.carousel-item {
+    position: relative;
+    img {
+        float: right;
+        width: 80%;
+    }
+}
+.carousel-item__description {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-60%);
+}
+
+.carousel-item__title {
+    font-size: 62px;
+    font-family: "Playfair Display", serif;
+    color: rgb(11, 12, 17);
+    font-weight: bold;
+    line-height: 1.032;
+}
+
+.carousel-item__your {
+    font-size: 12px;
+    font-family: "LeagueSpartan";
+    color: rgba(93, 168, 239, 0.902);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 7.333;
+    letter-spacing: 5px;
+}
+
+.carousel-item__subtitle {
+    font-size: 14px;
+    font-family: "Poppins";
+    color: rgb(143, 143, 143);
+    line-height: 1.714;
+
+    width: 50%;
+}

@@ -1,0 +1,118 @@
+.slider {
+    width: 88.5%;
+    margin: 0 auto 4%;
+}
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+    font-family: "flaticon";
+}
+.slick-prev:before {
+    content: "\f109";
+}
+.slick-next:before {
+    content: "\f108";
+}
+
+.slick-slide {
+    transition: all ease-in-out 0.3s;
+    opacity: 0.2;
+}
+
+.slick-active {
+    opacity: 1;
+}
+
+.slick-current {
+    opacity: 1;
+}
+
+.boards {
+    padding-top: 15%;
+    background-image: url("./../img/bg/bg-water.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.boards__title-blue {
+    font-size: 12px;
+    font-family: "LeagueSpartan";
+    color: rgba(93, 168, 239, 0.902);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+.board {
+    display: inline-block;
+    position: relative;
+}
+
+.board__thing {
+    position: relative;
+    float: left;
+
+    z-index: 2;
+    &::before {
+        content: "";
+        width: 100%;
+        height: 65%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: #e7e7e7;
+        z-index: -1;
+    }
+}
+
+.board__description {
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+    transform: translate(80%);
+    z-index: 3;
+    p {
+        font-size: 12px;
+        font-family: "Poppins";
+        color: rgb(122, 122, 122);
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-bottom: 0;
+    }
+    h2 {
+        font-size: 26px;
+        font-family: "Playfair Display", serif;
+        color: rgba(51, 51, 51, 0.6);
+        margin-bottom: 20%;
+    }
+}
+
+.board__price {
+    display: inline-block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    span {
+        font-size: 20px;
+        font-family: "Poppins";
+        color: rgb(206, 96, 168);
+        line-height: 1.2;
+    }
+    p {
+        font-size: 9px;
+        font-family: "LeagueSpartan";
+        color: rgb(51, 51, 51);
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
