@@ -16,18 +16,22 @@ $color_white: white;
 @import "_boards";
 @import "_training";
 @import "_point";
+@import "_contacts";
+@import "_footer";
 a:hover {
   text-decoration: none;
   transition: all 0.3s ease;
 }
-body {
+.wrapper {
+  position: relative;
+  overflow: hidden;
   &::before,
   &::after {
     content: "";
     position: absolute;
     top: 0;
     width: 2px;
-    height: 600%;
+    height: 675%;
     background-color: rgba(204, 204, 204, 0.192);
   }
   &::before {
@@ -36,18 +40,20 @@ body {
   &::after {
     right: 7%;
   }
-  .row,
-  .col {
-    padding: 0;
-    margin: 0;
-  }
+
   * img {
     width: 100%;
   }
 }
 
-main {
-  overflow: hidden;
+.row,
+.col {
+  padding: 0;
+  margin: 0;
+}
+
+i:before {
+  margin-left: 0px !important;
 }
 
 .description {
@@ -87,7 +93,6 @@ main {
   font-family: "Poppins", sans-serif;
   color: $color_subtitle;
   line-height: 1.714;
-  text-align: left;
   transition: 0.3s;
   &:hover {
     color: #000;
@@ -130,4 +135,110 @@ main {
   }
 }
 
+@media (min-width: 2000px) {
+  .navbar {
+    margin: 0 7%;
+  }
+  .navbar-nav {
+    width: 30%;
+  }
+  .vertical {
+    height: 45vw;
+  }
+  i::before {
+    font-size: 34px !important;
+  }
+  .description__subtitle {
+    font-size: 18px;
+  }
+  .description__link {
+    font-size: 14px;
+  }
 
+  .contacts__bg {
+    bottom: -3%;
+  }
+
+  input.form-control {
+    font-size: 2.25rem !important;
+  }
+}
+
+@media (max-width: 1050px) {
+  .description {
+    width: 270px;
+  }
+  .point.row {
+    width: 80%;
+  }
+  .number {
+    font-size: 105px;
+  }
+  .contacts {
+    padding-top: 3%;
+  }
+
+  .contacts_address {
+    padding: 0 4% !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .vertical {
+    height: 60vw;
+  }
+  .stories__title::before {
+    height: 26%;
+  }
+  .description {
+    margin-left: 6%;
+    width: 240px;
+  }
+  .board__description {
+    right: 20%;
+  }
+  .description__title {
+    font-size: 36px;
+    &.befo {
+      padding-bottom: 7px;
+      margin-bottom: 7%;
+    }
+  }
+  .number {
+    font-size: 70px;
+  }
+  .training__aside-number {
+    top: 14%;
+    left: 6%;
+  }
+  .contacts__bg {
+    bottom: 20%;
+  }
+  .contacts__header-vline {
+    height: 60px;
+    margin-bottom: 6%;
+  }
+  .contacts__header {
+    max-width: 70%;
+  }
+  .contacts_address-suptitle {
+    line-height: 0;
+  }
+  .contacts_address .description__title {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 450px) {
+  .col, col-5, col-6 {
+    max-width: 100%;
+    flex: 0 0 100%;
+    flex-basis: 1 !important;
+  }
+  .stories__item-video {
+    width: 100%;
+    height: 100%;
+    transform: none;
+    
+}
+}

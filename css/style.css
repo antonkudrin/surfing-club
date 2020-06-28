@@ -9,6 +9,14 @@
   margin: 0 6%;
 }
 
+.navbar-light .navbar-toggler {
+  border: none;
+}
+
+.navbar-light .navbar-toggler:hover {
+  outline: none;
+}
+
 .navbar-collapse {
   margin-left: 16%;
 }
@@ -162,7 +170,7 @@
 
 .carousel-item img {
   float: right;
-  width: 80%;
+  width: 80% !important;
 }
 
 .carousel-item__description {
@@ -245,6 +253,30 @@
           transform: translate(-15%, 12%);
 }
 
+.boards {
+  position: relative;
+  padding-top: 15%;
+}
+
+.boards__bg {
+  position: absolute;
+  bottom: 14%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.boards__suptitle {
+  font-size: 12px;
+  font-family: "LeagueSpartan";
+  color: rgba(93, 168, 239, 0.902);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: 0;
+}
+
 .slider {
   width: 88.5%;
   margin: 0 auto 4%;
@@ -284,23 +316,6 @@
 
 .slick-current {
   opacity: 1;
-}
-
-.boards {
-  padding-top: 15%;
-  background-image: url("./../img/bg/bg-water.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.boards__title-blue {
-  font-size: 12px;
-  font-family: "LeagueSpartan";
-  color: rgba(93, 168, 239, 0.902);
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  margin: 0;
 }
 
 .board {
@@ -445,41 +460,134 @@
   left: 19%;
 }
 
+.contacts {
+  position: relative;
+  padding-top: 10%;
+}
+
+.contacts .btn {
+  background-color: #5da8ef;
+  border-radius: 0px !important;
+}
+
+.contacts .btn:hover {
+  background-color: #1576d1;
+}
+
+.contacts input {
+  font-family: "LeagueSpartan";
+  border-radius: 0px !important;
+  background-color: #F5F5F5;
+}
+
+.contacts__bg {
+  position: absolute;
+  right: 0;
+  bottom: 5%;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.contacts__header-vline {
+  width: 2px;
+  height: 100px;
+  background-color: #5da8ef;
+  margin-bottom: 10%;
+}
+
+.contacts__header {
+  margin: 0 auto 10%;
+}
+
+.contacts__header h2 {
+  margin-bottom: 5%;
+}
+
+.contacts__header p {
+  margin-bottom: 5%;
+}
+
+.contacts_address {
+  padding: 4% !important;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.contacts_address .description__title {
+  font-size: 32px;
+  margin-left: 5%;
+}
+
+.contacts_address .description__link {
+  color: #5da8ef;
+}
+
+.contacts_address-suptitle {
+  font-size: 12px;
+  font-family: "LeagueSpartan";
+  color: rgba(11, 12, 17, 0.271);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 7.333;
+}
+
+.footer {
+  margin: 5% 0;
+}
+
+.footer__navbar {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navbar-brand {
+  width: 16px;
+}
+
 a:hover {
   text-decoration: none;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-body::before, body::after {
+.wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.wrapper::before, .wrapper::after {
   content: "";
   position: absolute;
   top: 0;
   width: 2px;
-  height: 600%;
+  height: 675%;
   background-color: rgba(204, 204, 204, 0.192);
 }
 
-body::before {
+.wrapper::before {
   left: 7%;
 }
 
-body::after {
+.wrapper::after {
   right: 7%;
 }
 
-body .row,
-body .col {
+.wrapper * img {
+  width: 100%;
+}
+
+.row,
+.col {
   padding: 0;
   margin: 0;
 }
 
-body * img {
-  width: 100%;
-}
-
-main {
-  overflow: hidden;
+i:before {
+  margin-left: 0px !important;
 }
 
 .description {
@@ -523,7 +631,6 @@ main {
   font-family: "Poppins", sans-serif;
   color: rgba(97, 97, 97, 0.651);
   line-height: 1.714;
-  text-align: left;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -567,4 +674,112 @@ main {
 .description__link:hover::before {
   -webkit-transform: scaleX(0.6);
           transform: scaleX(0.6);
+}
+
+@media (min-width: 2000px) {
+  .navbar {
+    margin: 0 7%;
+  }
+  .navbar-nav {
+    width: 30%;
+  }
+  .vertical {
+    height: 45vw;
+  }
+  i::before {
+    font-size: 34px !important;
+  }
+  .description__subtitle {
+    font-size: 18px;
+  }
+  .description__link {
+    font-size: 14px;
+  }
+  .contacts__bg {
+    bottom: -3%;
+  }
+  input.form-control {
+    font-size: 2.25rem !important;
+  }
+}
+
+@media (max-width: 1050px) {
+  .description {
+    width: 270px;
+  }
+  .point.row {
+    width: 80%;
+  }
+  .number {
+    font-size: 105px;
+  }
+  .contacts {
+    padding-top: 3%;
+  }
+  .contacts_address {
+    padding: 0 4% !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .vertical {
+    height: 60vw;
+  }
+  .stories__title::before {
+    height: 26%;
+  }
+  .description {
+    margin-left: 6%;
+    width: 240px;
+  }
+  .board__description {
+    right: 20%;
+  }
+  .description__title {
+    font-size: 36px;
+  }
+  .description__title.befo {
+    padding-bottom: 7px;
+    margin-bottom: 7%;
+  }
+  .number {
+    font-size: 70px;
+  }
+  .training__aside-number {
+    top: 14%;
+    left: 6%;
+  }
+  .contacts__bg {
+    bottom: 20%;
+  }
+  .contacts__header-vline {
+    height: 60px;
+    margin-bottom: 6%;
+  }
+  .contacts__header {
+    max-width: 70%;
+  }
+  .contacts_address-suptitle {
+    line-height: 0;
+  }
+  .contacts_address .description__title {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 450px) {
+  .col, col-5, col-6 {
+    max-width: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    -ms-flex-preferred-size: 1 !important;
+        flex-basis: 1 !important;
+  }
+  .stories__item-video {
+    width: 100%;
+    height: 100%;
+    -webkit-transform: none;
+            transform: none;
+  }
 }

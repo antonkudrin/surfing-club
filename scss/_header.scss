@@ -3,6 +3,13 @@
     margin: 0 6%;
 }
 
+.navbar-light .navbar-toggler {
+    border: none;
+    &:hover{
+        outline: none;
+    }
+}
+
 .navbar-collapse {
     margin-left: 16%;
 }
@@ -125,7 +132,7 @@
     position: relative;
     img {
         float: right;
-        width: 80%;
+        width: 80% !important;
     }
 }
 .carousel-item__description {

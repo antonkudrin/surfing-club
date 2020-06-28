@@ -4,7 +4,7 @@ $(document).on("ready", function () {
       infinite: true,
       slidesToShow: 5,
       slidesToScroll: 1,
-      autoplay: true,
+      // autoplay: true,
       autoplaySpeed: 3000,
 
       responsive: [
@@ -22,6 +22,15 @@ $(document).on("ready", function () {
           breakpoint: 1600,
           settings: {
             slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            
+          },
+        },
+        {
+          breakpoint: 1050,
+          settings: {
+            slidesToShow: 2,
             slidesToScroll: 1,
             infinite: true,
             

@@ -1,0 +1,61 @@
+.contacts {
+    position: relative;
+    padding-top: 10%;
+    .btn {
+        background-color: $color_linear;
+        border-radius: 0px !important;
+        &:hover {
+            background-color: darken($color_linear, 20%);
+        }
+    }
+    input {
+        font-family: "LeagueSpartan";
+        border-radius: 0px !important;
+        background-color: #F5F5F5;
+    }
+}
+.contacts__bg {
+    position: absolute;
+    right: 0;
+    bottom: 5%;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.contacts__header-vline {
+    width: 2px;
+    height: 100px;
+    background-color: $color_linear;
+    margin-bottom: 10%;
+}
+.contacts__header {
+    margin: 0 auto 10%;
+
+    h2 {
+        margin-bottom: 5%;
+    }
+    p {
+        margin-bottom: 5%;
+    }
+}
+
+.contacts_address {
+    padding: 4% !important;
+    align-self: center;
+    .description__title {
+        font-size: 32px;
+        margin-left: 5%;
+    }
+    .description__link {
+        color: $color_linear;
+    }
+}
+.contacts_address-suptitle {
+    font-size: 12px;
+    font-family: "LeagueSpartan";
+    color: rgba(11, 12, 17, 0.271);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 7.333;
+}
