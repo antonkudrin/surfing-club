@@ -497,7 +497,7 @@
 }
 
 .contacts__header {
-  margin: 0 auto 10%;
+  margin: 0 auto 10% !important;
 }
 
 .contacts__header h2 {
